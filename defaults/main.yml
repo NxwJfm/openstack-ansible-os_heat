@@ -223,6 +223,10 @@ heat_plugin_dirs:
   - /usr/lib/heat
   - /usr/local/lib/heat
 
+# Set to bigger values to be able to handle bigger templates (might be need for magnum especially)
+heat_max_template_size: 524288
+heat_max_json_body_size: 1048576
+
 ## Policy vars
 # Provide a list of access controls to update the default policy.json with. These changes will be merged
 # with the access controls in the default policy.json. E.g.
